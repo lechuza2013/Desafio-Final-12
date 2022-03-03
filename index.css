@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+}
+/* HEADER */
+.header {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  max-height: 50px;
+  width: 95%;
+  background: transparent;
+  padding: 15px;
+}
+.los-puntitos {
+  background-image: url("./puntitos.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-img {
+  height: 70px;
+  width: 70px;
+}
+.contenedor-de-rectangulos {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-right: 20px;
+}
+.rectangulo-a {
+  background-color: black;
+  width: 40px;
+  height: 6px;
+  margin: 5px;
+}
+.titulo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  text-align: center;
+  margin: 94px 58px;
+}
+.imagen-dos {
+  margin: 0 20px 0 20px;
+  width: 310px;
+  height: 300px;
+  align-self: center;
+}
+.contenedor-principal-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.links {
+  display: none;
+}
+/* MEDIA HEADER*/
+@media (min-width: 800px) {
+  .contenedor-principal-header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .titulo {
+    margin: 70px 30px;
+  }
+  .contenedor-de-rectangulos {
+    width: 400px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .rectangulo-a {
+    display: none;
+  }
+  .logo-img {
+    margin-left: 30px;
+  }
+  .links {
+    margin-top: 15px;
+    display: block;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    max-height: 50px;
+    width: 100%;
+    background: transparent;
+  }
+}
+/* QUIEN SOY */
+.contenedor-quien-soy {
+  background-color: #141414;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.titulo2 {
+  color: #fafafa;
+}
+h2 {
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 44px;
+  letter-spacing: -2px;
+  text-align: center;
+  margin: 0;
+}
+.parrafo-quiensoy {
+  color: #fafafa;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.check {
+  margin: 50px 150px;
+}
+/* MEDIA QUIEN SOY */
+@media (min-width: 800px) {
+  .contenedor-quien-soy {
+    background-color: #141414;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .check {
+    height: 211px;
+    width: 211px;
+  }
+
+  .titulo2 {
+    text-align: start;
+  }
+  .parrafo-quiensoy {
+    max-width: 500px;
+  }
+}
+/* SERVICIOS */
+.contenedor-servicios {
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr 1fr;
+  align-items: center;
+}
+.hago-cosas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3 {
+  margin: 10px auto;
+  /*Tipografía*/
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.parrafos-servicios {
+  margin: 0 50px;
+  margin-bottom: 100px;
+  /*Tipografía*/
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+/* MEDIA SERVICIOS */
+@media (min-width: 800px) {
+  .contenedor-servicios {
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .titulo3 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+}
+/* ESCRIBEME */
+.contenedor-escribeme {
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.titulo4 {
+  color: #fafafa;
+}
+.label {
+  margin-top: 15px;
+  /*Tipografía*/
+  color: #fafafa;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 20px;
+}
+.inputs {
+  margin: 10px 20px 20px 20px;
+}
+.boton {
+  margin: 40px 20px 70px 20px;
+  background: #ffd953;
+  border-radius: 7px;
+  height: 45px;
+  cursor: pointer;
+
+  /*Tipografia*/
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+/* MEDIA ESCRIBEME*/
+@media (min-width: 800px) {
+  .contenedor-escribeme {
+    background-color: #141414;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px;
+  }
+  .inputs {
+    max-width: 500px;
+    border: 3px solid #2c2c2c;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .titulo4 {
+    grid-row: 1 /8;
+    margin-right: 40px;
+
+    /* Tipografía */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+    text-align: right;
+  }
+  .label {
+    margin-top: 5px;
+  }
+  .boton {
+    margin: 15px 20px 70px 20px;
+    max-width: 500px;
+  }
+}
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #c4c4c4;
+  padding: 15px;
+  background-image: url("./puntitos2.png");
+}
+.copyright {
+  margin-bottom: 80px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.parrafos-redes {
+  vertical-align: middle;
+  display: inline;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+}
+.redes-images {
+  vertical-align: middle;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.cada-red-social {
+  margin-bottom: 30px;
+}
+/* MEDIA FOOTER */
+@media (min-width: 800px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 30px;
+  }
+  .logo-img {
+    margin-left: 15px;
+  }
+}
